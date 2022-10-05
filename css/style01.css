@@ -1,0 +1,186 @@
+*{
+  
+    margin: 0;
+   padding:0;
+   
+}
+body{
+  background-image: url(bc.jpg);
+  background-size: cover;
+  background-position: center;
+    
+}
+
+.manu-bar{
+  
+  background-color: skyblue;
+
+  background-size: cover;
+  background-position: center;
+  text-align: left;
+}
+
+.menu ul{
+  display: inline-flex;
+  list-style: none;
+
+  
+  
+}
+.menu ul li{
+  
+  width: 100px;
+  padding:20px ;
+  margin: 10px;
+  font-size: 18px;
+  cursor: pointer;  
+  box-align: border-box;  
+}
+.logo img{
+  
+  width: 45px;
+  margin-top: -7px;
+  margin-left: 10px;
+  margin-right: 0px;
+ 
+}
+
+
+.menu .fa{
+
+  margin-right: 10px;
+}
+
+.sub-menu1{
+
+  display: none;
+}
+.menu ul li:hover .sub-menu1{
+ display: block;
+ position: absolute;
+ margin: 20px;
+ background-color: skyblue;
+ margin-left: -10px;
+
+}
+
+.menu ul li:hover{
+
+  color: blueviolet;
+}
+
+
+.menu ul li:hover .sub-menu1 ul{
+   
+  display: block;
+  margin: 10px;
+
+
+
+}
+
+.menu ul li:hover .sub-menu1 ul li{
+
+    width: 130px;
+    padding: 25px;
+    border-bottom: 3px solid #000;
+    background :transparent;
+    border-radius: 40px;
+    text-align: left;
+
+
+
+}
+
+.menu ul li:hover .sub-menu1 ul li :last-child
+{
+border-bottom: none;
+
+
+
+}
+
+.sub-menu2 ul li{
+  
+  color: darkblue;
+
+}
+
+
+.sub-menu1 ul li:hover 
+{
+  color:red;
+}
+.sub-menu2 ul li:hover{
+
+  color: red;
+}
+
+
+
+
+.fa-angle-right
+{
+  float: right;
+}
+
+
+
+
+.sub-menu2{
+
+  display: none;
+}
+
+
+.hover-me:hover .sub-menu2
+{
+    position: absolute;
+    display: block;
+    margin-top: -40px;
+    margin-left: 140px;
+    background: skyblue;
+    
+    
+}
+
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: skyblue;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: blue;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color:red;
+
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  left: 25px;
+  font-size: 36px;
+  margin-right: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
